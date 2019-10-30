@@ -14,3 +14,12 @@ data = t.search(q="Halloween", count=50)
 
 for status in data['statuses']:
     print(status['text'])
+
+# Import Halloween vocabulary word list
+
+
+"custom"
+"party"
+"pumpkin"
+"joker"
+"horror"
