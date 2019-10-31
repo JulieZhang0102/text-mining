@@ -10,6 +10,7 @@ def read_file_to_list(path_to_file):
     words_final = []
     for line in f:
         line.strip()
+        line = line.lower()
         tweet_list.append(line)
     for i in range(len(tweet_list)):
         word = tweet_list[i].split()
@@ -23,7 +24,6 @@ def read_file_to_list(path_to_file):
     return words_final
 
 tweet_word = read_file_to_list("assignment2/text-mining/Halloween_text")
-print(tweet_word)
 
 def stop_word(tweet):
     stopwords = []
@@ -37,7 +37,7 @@ def stop_word(tweet):
     #     if word in tweet:
     #         tweet.remove(word)
     for i in range(len(tweet)):
-        word = tweet[i].lower()
+        word = tweet[i]
         if word not in stopwords:
             new_tweet.append(word)
     return new_tweet
@@ -63,6 +63,8 @@ def most_frequent(dictionary):
         result.append((value, key))
     result.sort()
     result.reverse()
-    print(result)
+    return result
 
-most_frequent(word_dictionary)
+word_frequency = most_frequent(word_dictionary)
+
+top_ten_word = print(word_frequency[:10])
