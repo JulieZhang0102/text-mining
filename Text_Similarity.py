@@ -2,7 +2,7 @@ import random
 import ast
 
 # Import tweets gathered as a list
-with open('assignment2/text-mining/Halloween_text_list', 'r') as f:
+with open('Halloween_text_list', 'r') as f:
     tweets_list = ast.literal_eval(f.read())
 
 # Function to calculate the similarity between two sentences
