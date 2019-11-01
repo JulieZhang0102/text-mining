@@ -2,7 +2,7 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 import ast
 
 # Import tweets gathered as a list
-with open('assignment2/text-mining/Halloween_text_list', 'r') as f:
+with open('Halloween_text_list', 'r') as f:
     tweets_list = ast.literal_eval(f.read())
 
 # Create lists for different sentiments
@@ -26,5 +26,5 @@ avg_neu = sum(score_list_neu)/100
 avg_pos = sum(score_list_pos)/100
 avg_compound = sum(score_list_compound)/100
 
-# Print out the average score for each sentiment
+# Print out the average score for each sentiment, keep 2 decimal places
 print('The average negative score is {:.2f}; neutral score is {:.2f}; positive score is {:.2f}; compound score is {:.2f}.'.format(avg_neg, avg_neu,avg_pos,avg_compound))
