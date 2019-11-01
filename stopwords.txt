@@ -41,6 +41,7 @@ few
 for 
 from 
 further 
+going 
 had 
 hadn't 
 has 
@@ -63,6 +64,7 @@ his
 how 
 how's 
 i 
+im 
 i'd 
 i'll 
 i'm 
@@ -76,7 +78,8 @@ it
 it's 
 its 
 itself 
-let's 
+let's
+just 
 me 
 more 
 most 
