@@ -33,13 +33,13 @@ for tweet in Halloween_text:
     cleaned_tweets.append(tweet)
 
 # Save final cleaned tweet list in a text file, used to analyze
-f = open('assignment2/text-mining/Halloween_text_list','w')
+f = open('Halloween_text_list','w')
 content = [cleaned_tweets]
 f.write("\n".join(map(lambda x: str(x), content)))
 f.close()
 
 # Save final cleaned tweets in a text file, easy to visualize
-f = open('assignment2/text-mining/Halloween_text','w')
+f = open('Halloween_text','w')
 content = [cleaned_tweets]
 for tweet in content:
     f.write("\n".join(map(lambda x: str(x), tweet)))
